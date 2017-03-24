@@ -1,0 +1,112 @@
+.headerMain {
+    font-size: 14px;
+}
+.headerMain-navUtil {
+    a {
+        color: $gray;
+        &:before {
+            @extend %iconStyle;
+            color: $green;
+        }
+    }
+    .navbar-nav {
+    	li:last-child {
+    		background:$orange;
+    		color:$black;
+    		a:before {
+    			color:$black;
+    		}
+    	}
+    }
+}
+.headerMain-collapse {
+    @include media-breakpoint-up(md) {
+        position: relative;
+        flex-basis: auto;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 2000px;
+            border-bottom: 1px solid $gray-light;
+        }
+    }
+}
+.headerMain-search {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-up(md) {
+        max-width: 0;
+        overflow: hidden;
+        position: absolute;
+        transition: max-width .2s ease;
+        .search-open & {
+            max-width: 999px;
+            position: relative;
+        }
+    }
+}
+.headerMain-searchBox {
+    background: transparent;
+    color: $gray-light;
+    border: 1px solid $gray-light;
+    margin-right: $spacer/2;
+    @include media-breakpoint-up(md) {
+        display: block;
+        border-width: 0;
+    }
+}
+
+.headerMain-searchToggler {
+    @extend .zmdi-search;
+    display: none;
+    background: transparent;
+    border-width: 0;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: $green;
+    &,
+    &:focus {
+        outline: none;
+    }
+    &:before {
+        @extend %iconStyle;
+        //background: green;
+        margin-right: 0;
+    }
+    .search-open & {
+        @extend .zmdi-close;
+        color: $white;
+    }
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
+}
+
+.headerMain-navItems {
+    @include media-breakpoint-up(md) {
+        transition: max-width .2s ease;
+        max-width: 999px;
+        position: relative;
+        margin-bottom:-1px;
+        z-index:2;
+        .search-open & {
+            position: absolute;
+            max-width: 0;
+            overflow: hidden;
+        }
+    }
+    .nav-item {
+        .nav-link {
+            color: $white;
+        }
+        &.active {
+            .nav-link {
+                border-bottom: 3px solid $green;
+            }
+        }
+    }
+}

@@ -95,16 +95,8 @@ Let's say different headers have different elements and we want some to appear i
 
 $(document).ready(function() {
   //attach main nav items to the main mobile nav in the drawer
-  $('.navMain > ul > li').retach({
-    destination: '.navMain-mobile > ul'
-  });
-  //attach util nav items to the main mobile nav in the drawer
-  $('.navUtil > ul > li').retach({
-    destination: '.navMain-mobile > ul'
-  });
-  //send the filters to the drawer on mobile
-  $('.filters').retach({
-    destination: '.filters-mobile',
-    mediaQuery: 641
+  $('.headerMain-navUtil').retach({
+    destination: '.headerMain-navMain #navbarSupportedContent',
+    mediaQuery: 768
   });
 });
