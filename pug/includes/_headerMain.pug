@@ -12,24 +12,75 @@
 					a.nav-link.zmdi-home(href='#') Manatt Home
 	nav.headerMain-navMain.navbar.navbar-expand-md.navbar-inverse.bg-inverse
 		.container.container-fluid
-			button.headerMain-navToggler.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+			button.headerMain-navToggler.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation') Menu
 				span.navbar-toggler-icon
 			a.navbar-brand.order-first(href='#') 360 health
 			#navbarSupportedContent.headerMain-collapse.collapse.navbar-collapse
 				ul.headerMain-navItems.navbar-nav.ml-auto
-					li.nav-item.active
+					li.nav-item.hasChildren.active
 						a.nav-link(href='#')
-							| Premium Insights 
-							span.sr-only (current)
+							| Premium Insights
+						ul.navbar-subnav
+							li.nav-item
+								a.nav-link(href='#') Sub Link 01
+							li.nav-item
+								a.nav-link(href='#') Sub Link 02
+							li.nav-item
+								a.nav-link(href='#') Sub Link 03
+							li.nav-item
+								a.nav-link(href='#') Sub Link 04
+							li.nav-item
+								a.nav-link(href='#') Sub Link 05
+							li.nav-item
+								a.nav-link(href='#') Sub Link 06
 					li.nav-item.hasChildren
 						a.nav-link(href='#') Key Topics
+						ul.navbar-subnav
+							li.nav-item
+								a.nav-link(href='#') Sub Link 01
+							li.nav-item
+								a.nav-link(href='#') Sub Link 02
+							li.nav-item
+								a.nav-link(href='#') Sub Link 03
+							li.nav-item
+								a.nav-link(href='#') Sub Link 04
+							li.nav-item
+								a.nav-link(href='#') Sub Link 05
+							li.nav-item
+								a.nav-link(href='#') Sub Link 06
 					li.nav-item.hasChildren
 						a.nav-link(href='#') Analytics
+						ul.navbar-subnav
+							li.nav-item
+								a.nav-link(href='#') Sub Link 01
+							li.nav-item
+								a.nav-link(href='#') Sub Link 02
+							li.nav-item
+								a.nav-link(href='#') Sub Link 03
+							li.nav-item
+								a.nav-link(href='#') Sub Link 04
+							li.nav-item
+								a.nav-link(href='#') Sub Link 05
+							li.nav-item
+								a.nav-link(href='#') Sub Link 06
 					li.nav-item.hasChildren
 						a.nav-link(href='#') Publications &amp; Events
+						ul.navbar-subnav
+							li.nav-item
+								a.nav-link(href='#') Sub Link 01
+							li.nav-item
+								a.nav-link(href='#') Sub Link 02
+							li.nav-item
+								a.nav-link(href='#') Sub Link 03
+							li.nav-item
+								a.nav-link(href='#') Sub Link 04
+							li.nav-item
+								a.nav-link(href='#') Sub Link 05
+							li.nav-item
+								a.nav-link(href='#') Sub Link 06
 					li.nav-item
 						a.nav-link(href='#') People
-				form#headerMainSearch.headerMain-search.my-2.my-lg-0.ml-auto.mr-md-2
+				form#headerMainSearch.headerMain-search.my-3.my-lg-0.ml-auto.mr-md-2
 					input#headerMainSearch.headerMain-searchBox.form-control(type='text', placeholder='Search')
-					button.btn.btn-success.my-2.my-sm-0(type='submit') Go
+					button.btn.btn-success(type='submit') GO
 				button.headerMain-searchToggler.zmdi-search
