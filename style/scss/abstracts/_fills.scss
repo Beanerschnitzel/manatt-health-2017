@@ -1,0 +1,70 @@
+/*  FILLS
+========================================================================== */
+
+/*
+ * Apply background colors
+ */
+
+
+
+.fillColorGray {
+    background-color: $colorGray !important;
+    &, a:not(.btn), a:not(.btn):hover {
+        color: color-contrast($colorGray);
+    }
+}
+.fillColorGrayLight {
+    background-color: $colorGrayLight !important;
+    & {
+        color: color-contrast($colorGrayLight);
+    }
+}
+.fillColorGrayLighter {
+    background-color: $colorGrayLighter !important;
+    & {
+        color: color-contrast($colorGrayLighter);
+    }
+}
+.fillColorGrayLightest {
+    background-color: $colorGrayLightest !important;
+    & {
+        color: color-contrast($colorGrayLightest);
+    }
+}
+.fillColorGrayDark {
+    background-color: $colorGrayDark !important;
+    &, a:not(.btn), a:not(.btn):hover {
+        color: color-contrast($colorGrayDark);
+    }
+}
+.fillColorGrayDarker {
+    background-color: $colorGrayDarker !important;
+    &, a:not(.btn), a:not(.btn):hover {
+        color: color-contrast($colorGrayDarker);
+    }
+}
+.fillColorGrayDarkest {
+    background-color: $colorGrayDarkest !important;
+    &, a:not(.btn), a:not(.btn):hover {
+        color: color-contrast($colorGrayDarkest);
+    }
+}
+.fillColorBlack {
+    background-color: $colorBlack !important;
+    &, a:not(.btn), a:not(.btn):hover {
+        color: color-contrast($colorBlack);
+    }
+}
+.fillColorWhite {
+    background-color: $colorWhite !important;
+    & {
+        color: color-contrast($colorWhite);
+    }
+}
+//brand colors
+.fillColorBrandGold {
+    background-color: $colorBrandGold !important;
+    & {
+        color: color-contrast($colorBrandGold);
+    }
+}

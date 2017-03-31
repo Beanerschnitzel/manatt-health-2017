@@ -2,6 +2,9 @@
 
 // 1. Configuration and helpers
 @import
+  'abstracts/colors',
+  'abstracts/contrast',
+  'abstracts/fills',
   'abstracts/variables',
   'abstracts/functions',
   'abstracts/mixins'; 
