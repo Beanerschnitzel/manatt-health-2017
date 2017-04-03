@@ -1,0 +1,78 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.tileList {
+	list-style:none;
+	padding:0;
+	display:flex;
+    flex-wrap:wrap;
+}
+.tileList-tile {
+    position: relative;
+    width: 100%;
+    line-height:1.2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:$colorWhite;
+    overflow:hidden;
+    &:hover {
+    	.tileList-inner {
+    		background:rgba($green,.75);
+    	}
+    }
+    @include media-breakpoint-up(md) {
+    	flex:0 0 50%;
+    }
+    @include media-breakpoint-up(lg) {
+    	flex:0 0 25%;
+    }
+}
+.tileList-inner {
+    padding:$spacer;
+    @include media-breakpoint-up(md) {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    overflow: hidden;
+	    justify-content: flex-end;
+	    z-index: 2;
+    }
+}
+.tileList-fullLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: inherit;
+    z-index: 3;
+
+}
+.tileList-heading {
+    font-weight: 300;
+    font-size: 20px;
+    position: relative;
+    //@extend .zmdi-menu;
+    &:after {
+    	content:'\f2fb';
+
+	  display: inline-block;
+	  font: normal normal normal 14px/1 '#{$zmdi-font-name}';
+	  font-size: inherit;
+	  text-rendering: auto;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+    }
+}
+.tileList-caption {
+    display:none;
+    @include media-breakpoint-up(md) {
+	    display:block;
+    }
+}

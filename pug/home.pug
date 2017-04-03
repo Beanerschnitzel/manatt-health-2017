@@ -7,5 +7,163 @@ html(lang="en")
 	body
 		include includes/_headerMain.pug
 		main
-			.container
-				h1 I need content yo!
+			.container.container-fluid.p-0
+				.row.no-gutters
+					.col-md-6
+						.row.no-gutters
+							.col-12
+								.tile.tile--animate.tile--img.ar--1-1(style="background-image:url(http://fillmurray.com/600/600)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+												ul.tile-share
+													li SHARE
+													li
+														a(href="").zmdi-twitter
+													li
+														a(href="").zmdi-facebook
+													li
+														a(href="").zmdi-linkedin
+										.tile-content
+											a(href="article.html",data-type="page-transition", class="tile-fullLink")
+											h3.tile-heading Featured Content Title Area
+											p.tile-caption
+												| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.col-md-6
+						.row.no-gutters
+							.col-12
+								.tile.tile--animate.tile--img.ar--2-1(style="background-image:url(http://fillmurray.com/600/300)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+										.tile-content
+											a(href="", class="tile-fullLink")
+											h3.tile-heading.tile-heading--sm Featured Content Title Area
+											p.tile-caption
+												| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.col-md-6
+								.tile.tile--animate.ar--1-1.carousel.slide.fillColorGrayDark(data-ride='carousel')
+									ol.carousel-indicators.tile-carouselIndicators
+										li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+										li(data-target='#carouselExampleIndicators', data-slide-to='1')
+										li(data-target='#carouselExampleIndicators', data-slide-to='2')
+									.tile-inner.carousel-inner(role='listbox')
+										.carousel-item.tile-carouselItem.active
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 01
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="article.html",data-type="page-transition", class="tile-fullLink")
+												h3.tile-heading Featured Content Title Area
+												p.tile-caption
+													| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										.carousel-item.tile-carouselItem
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 02
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="article.html",data-type="page-transition", class="tile-fullLink")
+												h3.tile-heading Featured Content Title Area
+												p.tile-caption
+													| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										.carousel-item.tile-carouselItem
+											.tile-topBar
+												.topBar-first
+													span.tile-indicator.zmdi-calendar-note Item Tag 03
+													ul.tile-share
+														li SHARE
+														li
+															a(href="").zmdi-twitter
+														li
+															a(href="").zmdi-facebook
+														li
+															a(href="").zmdi-linkedin
+											.tile-content
+												a(href="article.html",data-type="page-transition", class="tile-fullLink")
+												h3.tile-heading Featured Content Title Area
+												p.tile-caption
+													| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.col-md-6
+								.tile.tile--animate.tile--img.ar--1-1(style="background-image:url(http://fillmurray.com/300/300)")
+									.tile-inner
+										.tile-topBar
+											.topBar-first
+												span.tile-indicator.zmdi-calendar-note Item Tag
+										.tile-content
+											a(href="article.html",data-type="page-transition", class="tile-fullLink")
+											h3.tile-heading Featured Content Title Area
+											p.tile-caption
+												| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				section.container.px-4.py-5.fillColorGray.fullWidth
+					.row.sm-gutters
+						.col-md
+							.searchBox.mb-2.mb-md-0
+								input.searchBox-textField(type='text', name='', placeholder='Previously entered search term')
+								a.searchBox-submit
+						.col-md
+							label.sr-only(for='topic') Select a Key Topic
+							select#topic.form-control.mb-2.mb-md-0
+								option 1
+								option 2
+								option 3
+								option 4
+								option 5    		
+						.col-md
+							label.sr-only(for='content') Content Type
+							select#content.form-control.mb-2.mb-md-0
+								option 1
+								option 2
+								option 3
+								option 4
+								option 5					
+						.col-md.col-md-auto
+							button.btn.btn-primary.px-4 Go
+				section(style="background:url(http://fillmurray.com/600/600)")
+					h2.py-3.py-md-5.text-center Premium Insights
+					ul.tileList
+						li.tileList-tile.ar-md--1-1(style="background-image:url(http://fillmurray.com/300/300)")
+							a(href="").tileList-fullLink
+							.tileList-inner
+								h3.tileList-heading Updates
+								p.tileList-caption
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+						li.tileList-tile.ar-md--1-1(style="background-image:url(http://fillmurray.com/300/300)")
+							a(href="").tileList-fullLink
+							.tileList-inner
+								h3.tileList-heading Analysis
+								p.tileList-caption
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						li.tileList-tile.ar-md--1-1(style="background-image:url(http://fillmurray.com/300/300)")
+							a(href="").tileList-fullLink
+							.tileList-inner
+								h3.tileList-heading Regulator Summaries
+								p.tileList-caption
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						li.tileList-tile.ar-md--1-1(style="background-image:url(http://fillmurray.com/300/300)")
+							a(href="").tileList-fullLink
+							.tileList-inner
+								h3.tileList-heading Regulator Summaries
+								p.tileList-caption
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+					.py-3.py-md-5.text-center
+						button.btn.btn-primary.px-4 View All Insights

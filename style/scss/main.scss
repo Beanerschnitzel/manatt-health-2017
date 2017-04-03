@@ -5,6 +5,8 @@
   'abstracts/colors',
   'abstracts/contrast',
   'abstracts/fills',
+  'abstracts/fullWidth',
+  'abstracts/noPhatBottom',
   'abstracts/variables',
   'abstracts/functions',
   'abstracts/mixins'; 
@@ -14,7 +16,9 @@
   'vendor/bootstrap',
   'vendor/material-design-iconic-font',
   'vendor/normalize';
-  
+// 1. Configuration and helpers that extend BS
+@import
+  'abstracts/aspectRatio'; 
 
 // 3. Base stuff
 @import
@@ -25,12 +29,16 @@
 
 // 4. Layout-related sections
 @import
+  'layout/smGutters',
   'layout/header',
   'layout/footer';
 
 // 5. Components
 @import
   'components/headermain',
+  'components/tile',
+  'components/searchBox',
+  'components/tileList',
   'components/button';
 
 // 6. Page-specific styles

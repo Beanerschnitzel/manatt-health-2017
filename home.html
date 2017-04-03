@@ -9,6 +9,7 @@
     <script src="js/front-end/frontEnd-min.js"></script>
     <script src="js/vendor/bootstrap/util.js"></script>
     <script src="js/vendor/bootstrap/collapse.js"></script>
+    <script src="js/vendor/bootstrap/carousel.js"></script>
     <script src="js/front-end/waitForFinalEvent.js"></script>
     <script src="js/front-end/retach.js"></script>
     <script src="js/front-end/searchToggle.js"></script>
@@ -17,7 +18,7 @@
   </head>
   <body>
     <div class="headerMain">
-      <div class="container container-fluid">
+      <div class="container container-fluid p-0">
         <nav class="headerMain-navUtil navbar navbar-expand-md justify-content-md-end p-0">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link zmdi-favorite active" href="#">Favorites</a></li>
@@ -28,7 +29,7 @@
         </nav>
       </div>
       <nav class="headerMain-navMain navbar navbar-expand-md navbar-inverse bg-inverse">
-        <div class="container container-fluid">
+        <div class="container container-fluid p-0">
           <button class="headerMain-navToggler navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu<span class="navbar-toggler-icon"></span></button><a class="navbar-brand order-first" href="#">360 health</a>
           <div class="headerMain-collapse collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="headerMain-navItems navbar-nav ml-auto">
@@ -84,8 +85,186 @@
       </nav>
     </div>
     <main>
-      <div class="container">
-        <h1>I need content yo!</h1>
+      <div class="container container-fluid p-0">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <div class="row no-gutters">
+              <div class="col-12">
+                <div class="tile tile--animate tile--img ar--1-1" style="background-image:url(http://fillmurray.com/600/600);">
+                  <div class="tile-inner">
+                    <div class="tile-topBar">
+                      <div class="topBar-first"><span class="tile-indicator zmdi-calendar-note">Item Tag</span>
+                        <ul class="tile-share">
+                          <li>SHARE</li>
+                          <li><a class="zmdi-twitter" href=""></a></li>
+                          <li><a class="zmdi-facebook" href=""></a></li>
+                          <li><a class="zmdi-linkedin" href=""></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="tile-content"><a class="tile-fullLink" href="article.html" data-type="page-transition"></a>
+                      <h3 class="tile-heading">Featured Content Title Area</h3>
+                      <p class="tile-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row no-gutters">
+              <div class="col-12">
+                <div class="tile tile--animate tile--img ar--2-1" style="background-image:url(http://fillmurray.com/600/300);">
+                  <div class="tile-inner">
+                    <div class="tile-topBar">
+                      <div class="topBar-first"><span class="tile-indicator zmdi-calendar-note">Item Tag</span></div>
+                    </div>
+                    <div class="tile-content"><a class="tile-fullLink" href=""></a>
+                      <h3 class="tile-heading tile-heading--sm">Featured Content Title Area</h3>
+                      <p class="tile-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="tile tile--animate ar--1-1 carousel slide fillColorGrayDark" data-ride="carousel">
+                  <ol class="carousel-indicators tile-carouselIndicators">
+                    <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="tile-inner carousel-inner" role="listbox">
+                    <div class="carousel-item tile-carouselItem active">
+                      <div class="tile-topBar">
+                        <div class="topBar-first"><span class="tile-indicator zmdi-calendar-note">Item Tag 01</span>
+                          <ul class="tile-share">
+                            <li>SHARE</li>
+                            <li><a class="zmdi-twitter" href=""></a></li>
+                            <li><a class="zmdi-facebook" href=""></a></li>
+                            <li><a class="zmdi-linkedin" href=""></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tile-content"><a class="tile-fullLink" href="article.html" data-type="page-transition"></a>
+                        <h3 class="tile-heading">Featured Content Title Area</h3>
+                        <p class="tile-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item tile-carouselItem">
+                      <div class="tile-topBar">
+                        <div class="topBar-first"><span class="tile-indicator zmdi-calendar-note">Item Tag 02</span>
+                          <ul class="tile-share">
+                            <li>SHARE</li>
+                            <li><a class="zmdi-twitter" href=""></a></li>
+                            <li><a class="zmdi-facebook" href=""></a></li>
+                            <li><a class="zmdi-linkedin" href=""></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tile-content"><a class="tile-fullLink" href="article.html" data-type="page-transition"></a>
+                        <h3 class="tile-heading">Featured Content Title Area</h3>
+                        <p class="tile-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item tile-carouselItem">
+                      <div class="tile-topBar">
+                        <div class="topBar-first"><span class="tile-indicator zmdi-calendar-note">Item Tag 03</span>
+                          <ul class="tile-share">
+                            <li>SHARE</li>
+                            <li><a class="zmdi-twitter" href=""></a></li>
+                            <li><a class="zmdi-facebook" href=""></a></li>
+                            <li><a class="zmdi-linkedin" href=""></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tile-content"><a class="tile-fullLink" href="article.html" data-type="page-transition"></a>
+                        <h3 class="tile-heading">Featured Content Title Area</h3>
+                        <p class="tile-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="tile tile--animate tile--img ar--1-1" style="background-image:url(http://fillmurray.com/300/300);">
+                  <div class="tile-inner">
+                    <div class="tile-topBar">
+                      <div class="topBar-first"><span class="tile-indicator zmdi-calendar-note">Item Tag</span></div>
+                    </div>
+                    <div class="tile-content"><a class="tile-fullLink" href="article.html" data-type="page-transition"></a>
+                      <h3 class="tile-heading">Featured Content Title Area</h3>
+                      <p class="tile-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="container px-4 py-5 fillColorGray fullWidth">
+          <div class="row sm-gutters">
+            <div class="col-md">
+              <div class="searchBox mb-2 mb-md-0">
+                <input class="searchBox-textField" type="text" name="" placeholder="Previously entered search term"><a class="searchBox-submit"></a>
+              </div>
+            </div>
+            <div class="col-md">
+              <label class="sr-only" for="topic">Select a Key Topic</label>
+              <select class="form-control mb-2 mb-md-0" id="topic">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5    		</option>
+              </select>
+            </div>
+            <div class="col-md">
+              <label class="sr-only" for="content">Content Type</label>
+              <select class="form-control mb-2 mb-md-0" id="content">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5					</option>
+              </select>
+            </div>
+            <div class="col-md col-md-auto">
+              <button class="btn btn-primary px-4">Go</button>
+            </div>
+          </div>
+        </section>
+        <section style="background:url(http://fillmurray.com/600/600);">
+          <h2 class="py-3 py-md-5 text-center">Premium Insights</h2>
+          <ul class="tileList">
+            <li class="tileList-tile ar-md--1-1" style="background-image:url(http://fillmurray.com/300/300);"><a class="tileList-fullLink" href=""></a>
+              <div class="tileList-inner">
+                <h3 class="tileList-heading">Updates</h3>
+                <p class="tileList-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+            <li class="tileList-tile ar-md--1-1" style="background-image:url(http://fillmurray.com/300/300);"><a class="tileList-fullLink" href=""></a>
+              <div class="tileList-inner">
+                <h3 class="tileList-heading">Analysis</h3>
+                <p class="tileList-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+            <li class="tileList-tile ar-md--1-1" style="background-image:url(http://fillmurray.com/300/300);"><a class="tileList-fullLink" href=""></a>
+              <div class="tileList-inner">
+                <h3 class="tileList-heading">Regulator Summaries</h3>
+                <p class="tileList-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+            <li class="tileList-tile ar-md--1-1" style="background-image:url(http://fillmurray.com/300/300);"><a class="tileList-fullLink" href=""></a>
+              <div class="tileList-inner">
+                <h3 class="tileList-heading">Regulator Summaries</h3>
+                <p class="tileList-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </li>
+          </ul>
+          <div class="py-3 py-md-5 text-center">
+            <button class="btn btn-primary px-4">View All Insights</button>
+          </div>
+        </section>
       </div>
     </main>
   </body>
